@@ -100,7 +100,7 @@ public class BrickBreak extends JPanel implements KeyListener, ActionListener {
 		//check for game over
 		if (ball.getYpos() > 570) {
 			play = false;
-			g.setColor(Color.red);
+			g.setColor(Color.yellow);
 			g.setFont(new Font("serif", Font.BOLD, 30));
 			g.drawString("Game Over, Score: "+score, 190, 300);
 			g.setFont(new Font("serif", Font.BOLD, 20));
@@ -108,7 +108,7 @@ public class BrickBreak extends JPanel implements KeyListener, ActionListener {
 		}
 		else if (totalBricks <= 0) {
 			play = false;
-			g.setColor(Color.red);
+			g.setColor(Color.yellow);
 			g.setFont(new Font("serif", Font.BOLD, 30));
 			g.drawString("You Won, Score: "+score, 190, 300);
 
@@ -229,7 +229,7 @@ public class BrickBreak extends JPanel implements KeyListener, ActionListener {
 			player.setX(310);
 			player.setVelocity(0);
 			score = 0;
-			totalBricks = 21;
+			totalBricks = mapWidth * mapHeight;
 			for (int i = 0; i < mapHeight; i++) {
 				for (int j = 0; j < mapWidth; j++) {
 					map[i][j] = new Brick(540 / mapWidth, 300 / mapHeight, j * (540 + xGap) / mapWidth + 80,

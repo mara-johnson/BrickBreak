@@ -23,7 +23,7 @@ public class Brick {
 		this.y = y;
 		this.hp = hp;
 	}
-	
+		 
 	
 	//getters and setters
 	public int getWidth() {
