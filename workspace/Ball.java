@@ -1,3 +1,7 @@
+//Author: Mara Johnson
+//Date: 12/6
+//creates a Ball class and methods to move amd draw a ball object
+
 import java.awt.*;
 
 public class Ball {

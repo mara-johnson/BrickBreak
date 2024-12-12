@@ -1,3 +1,7 @@
+//Author: Mara Johnson
+//Date: 12/6
+//creates a Paddle class and methods to move amd draw a paddle object
+
 import java.awt.Graphics;
 import java.awt.*;
 
